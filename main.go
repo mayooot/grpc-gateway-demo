@@ -2,13 +2,15 @@ package main
 
 import (
 	"context"
+
+	"log"
+	"net"
+	"net/http"
+
 	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
 	helloworldpb "github.com/mayooot/greeter/proto/helloworld"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
-	"log"
-	"net"
-	"net/http"
 )
 
 type Server struct {
